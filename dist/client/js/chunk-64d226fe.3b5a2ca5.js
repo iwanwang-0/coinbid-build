@@ -27087,7 +27087,7 @@ catch (error) { }
 
 
 //# sourceMappingURL=index.js.map
-// EXTERNAL MODULE: ./src/config/index.js + 5 modules
+// EXTERNAL MODULE: ./src/config/index.js + 3 modules
 var src_config = __webpack_require__("f121");
 
 // EXTERNAL MODULE: ./src/eth/abi/CanvasAuction.json

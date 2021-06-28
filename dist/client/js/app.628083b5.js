@@ -69,7 +69,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "client/js/" + ({}[chunkId]||chunkId) + "." + {"chunk-2d216626":"51dde05c","chunk-5aa6424c":"30ae1f93","chunk-64d226fe":"4b9bfaac","chunk-3b62e49e":"c6daf911","chunk-6d6c6f43":"60fcb9ab","chunk-da727af0":"9f0f437c"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "client/js/" + ({}[chunkId]||chunkId) + "." + {"chunk-2d216626":"51dde05c","chunk-5aa6424c":"30ae1f93","chunk-64d226fe":"3b5a2ca5","chunk-3b62e49e":"c6daf911","chunk-6d6c6f43":"60fcb9ab","chunk-da727af0":"9f0f437c"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -879,7 +879,7 @@ var router = new vue_router_esm["a" /* default */]({
 // EXTERNAL MODULE: ./node_modules/vuex-persistedstate/dist/vuex-persistedstate.es.js
 var vuex_persistedstate_es = __webpack_require__("0e44");
 
-// EXTERNAL MODULE: ./src/config/index.js + 5 modules
+// EXTERNAL MODULE: ./src/config/index.js + 3 modules
 var src_config = __webpack_require__("f121");
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
@@ -1666,96 +1666,23 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW
   // NFTAuction		0xA0755CA6348b1AB5739fb7d6fAFF3e66B7E259A9
 
 });
-// CONCATENATED MODULE: ./src/config/tx.js
-/* harmony default export */ var tx = ([{
-  "type": "eth_transfer",
-  "gasLimit": "0x5208"
-}, {
-  "type": "token_transfer",
-  "gasLimit": "0x186a0"
-}, {
-  "type": "approve",
-  "gasLimit": "0x186a0"
-}, {
-  "type": "withdraw",
-  "gasLimit": "0x186a0"
-}, {
-  "type": "deposit",
-  "gasLimit": "0x186a0"
-}]);
-// CONCATENATED MODULE: ./src/config/dpath.js
-/* harmony default export */ var dpath = ([{
-  "name": "Tuzy 钱包",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Loopring Wallet",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Imtoken",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "MetaMask",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "TREZOR (ETH)",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Digital Bitbox",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Exodus",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Jaxx",
-  "dpath": "m/44'/60'/0'/0"
-}, {
-  "name": "Ledger (ETH)",
-  "dpath": "m/44'/60'/0'"
-}, {
-  "name": "TREZOR (ETC)",
-  "dpath": "m/44'/61'/0'/0"
-}, {
-  "name": "Ledger (ETC)",
-  "dpath": "m/44'/60'/160720'/0'"
-}, {
-  "name": "SingularDTV",
-  "dpath": "m/0'/0'/0'"
-}, {
-  "name": "Network: Testnets",
-  "dpath": "m/44'/1'/0'/0"
-}, {
-  "name": "Network: Expanse",
-  "dpath": "m/44'/40'/0'/0"
-}, {
-  "name": "Network: Ubiq",
-  "dpath": "m/44'/108'/0'/0"
-}, {
-  "name": "Network: Ellaism",
-  "dpath": "m/44'/163'/0'/0"
-}]);
 // CONCATENATED MODULE: ./src/config/config.test.js
-
-
 /* harmony default export */ var config_test = ({
-  webUrl: 'http://47.75.74.35:8000',
-  defaultPricePrecision: 8,
-  defaultAmountPrecision: 4,
-  defaultExpireTime: 3600 * 24 * 365 * 10,
-  // 秒
-  defaultGasPrice: 8,
-  defaultGasLimit: '0x186a0',
-  loopInterval: 30000,
-  localStorageVersion: '201901011200',
-  approveAllowance: '0xf000000000000000000000000000000000000000000000000000000000000000',
-  minAllowance: Math.pow(10, 30),
-  appId: '1234567',
-  // 测试节点
-  defaultServer: 'http://47.75.74.35/openapi',
-  webSocketServer: 'ws://47.75.74.35/wss/v1',
-  gethServer: 'https://ropsten.infura.io/v3/c5ae44a788ef43f0a3cfe4c6a77c71e6',
-  hydroExchangeAddress: '0xaba80a6f1d60a1feff034ab3820c8d98bd6cbe46',
-  hydroProxyAddress: '0x1b9540f50b3b9dde35cea9a403026a78965234ac',
-  chainId: 3,
+  // webUrl: 'http://47.75.74.35:8000',
+  // defaultPricePrecision: 8,
+  // defaultAmountPrecision: 4,
+  // defaultExpireTime: 3600 * 24 * 365 * 10, // 秒
+  // defaultGasPrice: 8,
+  // defaultGasLimit: '0x186a0',
+  // loopInterval: 30000,
+  // localStorageVersion: '201901011200',
+  // approveAllowance: '0xf000000000000000000000000000000000000000000000000000000000000000',
+  // minAllowance: 10 ** 30,
+  // appId: '1234567',
+  // gethServer: 'https://mainnet.infura.io/v3/6ef437a0bfc743d0bbfe73f72c90afd4', 主网
+  // chainId: 1,
+  gethServer: 'https://kovan.infura.io/v3/6ef437a0bfc743d0bbfe73f72c90afd4',
+  chainId: 42,
   addressZero: '0x0000000000000000000000000000000000000000',
   hashZero: '0x0000000000000000000000000000000000000000000000000000000000000000',
   // 本地测试节点
@@ -1767,8 +1694,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW
   // chainId: 1,
   // fundraisingToken: 'CER',
   // appDownload: '这是下载二维码',
-  tx: tx,
-  dpath: dpath,
   appDownload: '这是下载二维码',
   // NFTAuction: '0x6d03BA00b24c7126ddFDB0150851ed21e2426725',
   // NFTFactory: '0x6Ea4576B88013434FCC24A6af123a681eeE7a324',
@@ -1776,42 +1701,36 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW
   // coinbidCreation: '0xd862D3465436Ac9c14EcCdD691f1B75F542F43Af',
   // mining: '0xC50874e61E8ECd7157468EBD7F6315A0d7C519C7',
   // canvasAuction: '0xF70E2eCE0f88301F6d462A2646e9121F53aE35ad',
-  NFTAuction: '0x009d0041eC76922E204dCB654af60b0d7B543508',
-  NFTFactory: '0xf55B03d97E328efFd8978400696927815c720DF4',
-  coinBid: '0x9aC0eDBA256Bc6194B204c0BCBCb94DB1275712f',
-  coinbidCreation: '0x6C3283a94Fa773e12C0a76Fb3D96E196A732aab1',
-  mining: '0x01059878426a07E831493c0eAcD8822b597b90c3',
-  canvasAuction: '0x8b584A3f31215f9FEAD59Dfcf3E297a194860dF6' // CoinBid			0x9aC0eDBA256Bc6194B204c0BCBCb94DB1275712f
-  // CoinBidCreation		0x6C3283a94Fa773e12C0a76Fb3D96E196A732aab1
-  // NFTFactory		0xf55B03d97E328efFd8978400696927815c720DF4
-  // Mining			0x01059878426a07E831493c0eAcD8822b597b90c3
-  // CanvasAuction		0x8b584A3f31215f9FEAD59Dfcf3E297a194860dF6
-  // NFTAuction		0x009d0041eC76922E204dCB654af60b0d7B543508
+  NFTAuction: '0xA0755CA6348b1AB5739fb7d6fAFF3e66B7E259A9',
+  NFTFactory: '0x43C6a81B2A5297b21EF64c40f8135c6db5870B7B',
+  coinBid: '0x61D2D5288ebF9Ea0D45F372C3Da982b199359427',
+  coinbidCreation: '0x7dd33ea76fF9c4454234f4f77e58A0AF7D404A0F',
+  mining: '0xe7534267Ff5D391f08EBF36b525A321b90e0f630',
+  canvasAuction: '0x4e7C740AEE52D9135F1e634625a7fB798F272a77' // CoinBid			0x61D2D5288ebF9Ea0D45F372C3Da982b199359427
+  // CoinBidCreation		0x7dd33ea76fF9c4454234f4f77e58A0AF7D404A0F
+  // NFTFactory		0x43C6a81B2A5297b21EF64c40f8135c6db5870B7B
+  // Mining			0xe7534267Ff5D391f08EBF36b525A321b90e0f630
+  // CanvasAuction		0x4e7C740AEE52D9135F1e634625a7fB798F272a77
+  // NFTAuction		0xA0755CA6348b1AB5739fb7d6fAFF3e66B7E259A9
 
 });
 // CONCATENATED MODULE: ./src/config/config.prod.js
-
-
 /* harmony default export */ var config_prod = ({
-  webUrl: 'http://47.75.74.35:8000',
-  defaultPricePrecision: 8,
-  defaultAmountPrecision: 4,
-  defaultExpireTime: 3600 * 24 * 365 * 10,
-  // 秒
-  defaultGasPrice: 8,
-  defaultGasLimit: '0x186a0',
-  loopInterval: 30000,
-  localStorageVersion: '201901011200',
-  approveAllowance: '0xf000000000000000000000000000000000000000000000000000000000000000',
-  minAllowance: Math.pow(10, 30),
-  appId: '1234567',
-  // 测试节点
-  defaultServer: 'http://47.75.74.35/openapi',
-  webSocketServer: 'ws://47.75.74.35/wss/v1',
-  gethServer: 'https://ropsten.infura.io/v3/c5ae44a788ef43f0a3cfe4c6a77c71e6',
-  hydroExchangeAddress: '0xaba80a6f1d60a1feff034ab3820c8d98bd6cbe46',
-  hydroProxyAddress: '0x1b9540f50b3b9dde35cea9a403026a78965234ac',
-  chainId: 3,
+  // webUrl: 'http://47.75.74.35:8000',
+  // defaultPricePrecision: 8,
+  // defaultAmountPrecision: 4,
+  // defaultExpireTime: 3600 * 24 * 365 * 10, // 秒
+  // defaultGasPrice: 8,
+  // defaultGasLimit: '0x186a0',
+  // loopInterval: 30000,
+  // localStorageVersion: '201901011200',
+  // approveAllowance: '0xf000000000000000000000000000000000000000000000000000000000000000',
+  // minAllowance: 10 ** 30,
+  // appId: '1234567',
+  // gethServer: 'https://mainnet.infura.io/v3/6ef437a0bfc743d0bbfe73f72c90afd4', 主网
+  // chainId: 1,
+  gethServer: 'https://kovan.infura.io/v3/6ef437a0bfc743d0bbfe73f72c90afd4',
+  chainId: 42,
   addressZero: '0x0000000000000000000000000000000000000000',
   hashZero: '0x0000000000000000000000000000000000000000000000000000000000000000',
   // 本地测试节点
@@ -1823,8 +1742,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW
   // chainId: 1,
   // fundraisingToken: 'CER',
   // appDownload: '这是下载二维码',
-  tx: tx,
-  dpath: dpath,
   appDownload: '这是下载二维码',
   // NFTAuction: '0x6d03BA00b24c7126ddFDB0150851ed21e2426725',
   // NFTFactory: '0x6Ea4576B88013434FCC24A6af123a681eeE7a324',
@@ -1832,17 +1749,17 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW
   // coinbidCreation: '0xd862D3465436Ac9c14EcCdD691f1B75F542F43Af',
   // mining: '0xC50874e61E8ECd7157468EBD7F6315A0d7C519C7',
   // canvasAuction: '0xF70E2eCE0f88301F6d462A2646e9121F53aE35ad',
-  NFTAuction: '0x009d0041eC76922E204dCB654af60b0d7B543508',
-  NFTFactory: '0xf55B03d97E328efFd8978400696927815c720DF4',
-  coinBid: '0x9aC0eDBA256Bc6194B204c0BCBCb94DB1275712f',
-  coinbidCreation: '0x6C3283a94Fa773e12C0a76Fb3D96E196A732aab1',
-  mining: '0x01059878426a07E831493c0eAcD8822b597b90c3',
-  canvasAuction: '0x8b584A3f31215f9FEAD59Dfcf3E297a194860dF6' // CoinBid			0x9aC0eDBA256Bc6194B204c0BCBCb94DB1275712f
-  // CoinBidCreation		0x6C3283a94Fa773e12C0a76Fb3D96E196A732aab1
-  // NFTFactory		0xf55B03d97E328efFd8978400696927815c720DF4
-  // Mining			0x01059878426a07E831493c0eAcD8822b597b90c3
-  // CanvasAuction		0x8b584A3f31215f9FEAD59Dfcf3E297a194860dF6
-  // NFTAuction		0x009d0041eC76922E204dCB654af60b0d7B543508
+  NFTAuction: '0xA0755CA6348b1AB5739fb7d6fAFF3e66B7E259A9',
+  NFTFactory: '0x43C6a81B2A5297b21EF64c40f8135c6db5870B7B',
+  coinBid: '0x61D2D5288ebF9Ea0D45F372C3Da982b199359427',
+  coinbidCreation: '0x7dd33ea76fF9c4454234f4f77e58A0AF7D404A0F',
+  mining: '0xe7534267Ff5D391f08EBF36b525A321b90e0f630',
+  canvasAuction: '0x4e7C740AEE52D9135F1e634625a7fB798F272a77' // CoinBid			0x61D2D5288ebF9Ea0D45F372C3Da982b199359427
+  // CoinBidCreation		0x7dd33ea76fF9c4454234f4f77e58A0AF7D404A0F
+  // NFTFactory		0x43C6a81B2A5297b21EF64c40f8135c6db5870B7B
+  // Mining			0xe7534267Ff5D391f08EBF36b525A321b90e0f630
+  // CanvasAuction		0x4e7C740AEE52D9135F1e634625a7fB798F272a77
+  // NFTAuction		0xA0755CA6348b1AB5739fb7d6fAFF3e66B7E259A9
 
 });
 // CONCATENATED MODULE: ./src/config/index.js
