@@ -69,7 +69,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "client/js/" + ({}[chunkId]||chunkId) + "." + {"chunk-171cfe42":"ea221842","chunk-2c8a1c5f":"74c11742","chunk-42bc139e":"cc153bfd","chunk-10026bc2":"69f1631c","chunk-29f226f4":"7998b93c","chunk-487df876":"33a7818e","chunk-49fd179e":"ca8554d8","chunk-4be2ce20":"b46d334b","chunk-8bdc0d16":"a1ba3f76","chunk-a38e65e6":"0509636d","chunk-f9ab29be":"c1b5a94e"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "client/js/" + ({}[chunkId]||chunkId) + "." + {"chunk-171cfe42":"ea221842","chunk-2c8a1c5f":"74c11742","chunk-42bc139e":"cc153bfd","chunk-0d8cabd6":"480b7ad3","chunk-10026bc2":"69f1631c","chunk-29f226f4":"7998b93c","chunk-394d791c":"6324b259","chunk-487df876":"33a7818e","chunk-70ff139f":"942b4b69","chunk-a34ee324":"42eb7512","chunk-f9ab29be":"c1b5a94e"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -103,11 +103,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"chunk-171cfe42":1,"chunk-2c8a1c5f":1,"chunk-10026bc2":1,"chunk-29f226f4":1,"chunk-487df876":1,"chunk-49fd179e":1,"chunk-4be2ce20":1,"chunk-8bdc0d16":1,"chunk-a38e65e6":1,"chunk-f9ab29be":1};
+/******/ 		var cssChunks = {"chunk-171cfe42":1,"chunk-2c8a1c5f":1,"chunk-0d8cabd6":1,"chunk-10026bc2":1,"chunk-29f226f4":1,"chunk-394d791c":1,"chunk-487df876":1,"chunk-70ff139f":1,"chunk-a34ee324":1,"chunk-f9ab29be":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "client/css/" + ({}[chunkId]||chunkId) + "." + {"chunk-171cfe42":"d1f50b0e","chunk-2c8a1c5f":"21aa7c35","chunk-42bc139e":"31d6cfe0","chunk-10026bc2":"31143ee6","chunk-29f226f4":"dcca7b3d","chunk-487df876":"753b1fb1","chunk-49fd179e":"ae3819c9","chunk-4be2ce20":"123f9c4d","chunk-8bdc0d16":"c3bf4fef","chunk-a38e65e6":"247a4504","chunk-f9ab29be":"6ce6ceaa"}[chunkId] + ".css";
+/******/ 				var href = "client/css/" + ({}[chunkId]||chunkId) + "." + {"chunk-171cfe42":"d1f50b0e","chunk-2c8a1c5f":"21aa7c35","chunk-42bc139e":"31d6cfe0","chunk-0d8cabd6":"5327c7c0","chunk-10026bc2":"31143ee6","chunk-29f226f4":"dcca7b3d","chunk-394d791c":"0b60ceeb","chunk-487df876":"753b1fb1","chunk-70ff139f":"7312b24e","chunk-a34ee324":"de5d8bbe","chunk-f9ab29be":"6ce6ceaa"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -852,14 +852,14 @@ var routes = [{
       path: '/auction/:type(user)',
       name: 'AuctionUser',
       component: function component() {
-        return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-a38e65e6")]).then(__webpack_require__.bind(null, "deaa"));
+        return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-70ff139f")]).then(__webpack_require__.bind(null, "deaa"));
       }
     }]
   }, {
     path: '/auction/detail',
     name: 'AuctionDetail',
     component: function component() {
-      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-8bdc0d16")]).then(__webpack_require__.bind(null, "d0df"));
+      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-394d791c")]).then(__webpack_require__.bind(null, "d0df"));
     }
   }, {
     path: '/cavas/detail',
@@ -877,13 +877,13 @@ var routes = [{
     path: '/mine/work/detail',
     name: 'MineWorkDetail',
     component: function component() {
-      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-4be2ce20")]).then(__webpack_require__.bind(null, "16a1"));
+      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-a34ee324")]).then(__webpack_require__.bind(null, "16a1"));
     }
   }, {
     path: '/swap/detail',
     name: 'MineWorkDetail',
     component: function component() {
-      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-49fd179e")]).then(__webpack_require__.bind(null, "7c11"));
+      return Promise.all(/* import() */[__webpack_require__.e("chunk-42bc139e"), __webpack_require__.e("chunk-0d8cabd6")]).then(__webpack_require__.bind(null, "7c11"));
     }
   }, {
     path: '/collection/create',
